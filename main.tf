@@ -22,4 +22,4 @@ resource "aws_instance" "example" {
     Purpose = "Terraform Demo"
   }
 }
-}
+
