@@ -1,19 +1,9 @@
-terraform{  
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 2.70"
-    }
+resource "aws_vpc" "main" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "demo-vpc"
+    Purpose = "Jenkins Demo"
   }
 }
-
-resource "aws_instance" "example" {
-  ami           = "ami-09282971cf2faa4c9"
-  instance_type = "t2.micro"
-  
-    tags = {
-    Name = "demo-instance"
-    Purpose = "Terraform Demo"
-  }
-}
-
