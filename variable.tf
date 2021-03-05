@@ -1,8 +1,3 @@
 variable "region" {
-#  default = "us-east-2"
-}
-
-variable "accesskey" {
-}
-variable "secretkey" {
+  default = "us-east-2"
 }
