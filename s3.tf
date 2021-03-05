@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "terraform-state" {
+resource "aws_s3_bucket" "terraform-state-jhp0204" {
   bucket = "terraform-up-and-running-state"
 
   versioning {
