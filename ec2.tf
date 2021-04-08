@@ -5,7 +5,7 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = [aws_security_group.allow_22_all.id]
   key_name = "terraform-keypair"
   tags = {
-    Name = "demo-instance"
+    Name = "demo-ansible-instance"
     Purpose = "Terraform Ansible Connection test"
   }
   connection {
