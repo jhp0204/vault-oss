@@ -15,6 +15,6 @@ resource "aws_security_group" "allow_22_all" {
     protocol = "-1"
   }
   tags = {
-    Name =  ""${module.vpc.vpc_id}"_allow_22_all""
+    Name =  "allow_22_all"
   }
 }
