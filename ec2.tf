@@ -12,7 +12,7 @@ resource "aws_instance" "example" {
     user = "ubuntu"
     type = "ssh"
 
-    private_key = file("~/.ssh/terraform-keypair.pem") # 해당 부분 수정이 필요한지 check 실제 폴더에 있는 파일은 authorized_keys이지만, pem파일명은 terraform-keypair.pem 이다. 
+    private_key = file("~/.ssh/authorized_keys") # 해당 부분 수정이 필요한지 check 실제 폴더에 있는 파일은 authorized_keys이지만, pem파일명은 terraform-keypair.pem 이다. 
     timeout     = "3m"
   }
   
