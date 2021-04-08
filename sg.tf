@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_22_all" {
   name = "allow_22_all"
   description = "allow ssh port from all"
-  vpc_id = module.vpc.vpc_id_output
+  vpc_id = module.vpc.vpc_id
   ingress {
     cidr_blocks = [ "0.0.0.0/0" ]
     from_port = 22
