@@ -8,4 +8,4 @@ resource "aws_instance" "example" {
     Name = "demo-ansible-instance"
     Purpose = "Terraform Ansible Connection test"
   }
-
+ }
