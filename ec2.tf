@@ -3,6 +3,7 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   subnet_id = "subnet-1c1e0466"
   vpc_security_group_ids = [aws_security_group.allow_22_all.id]
+  key_name = "terraform-keypair"
   tags = {
     Name = "demo-instance"
     Purpose = "Terraform Demo"
