@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_22_all" {
   name = "allow_22_all"
   description = "allow ssh port from all"
-  vpc_id = "${aws_vpc.vpc.id}"
+  vpc_id = "${module.vpc.vpc_id}"
   ingress {
     cidr_blocks = [ "0.0.0.0/0" ]
     from_port = 22
@@ -15,6 +15,6 @@ resource "aws_security_group" "allow_22_all" {
     protocol = "-1"
   }
   tags = {
-    Name = "${aws_vpc.vpc.id}_allow_22_all"
+    Name =  ""${module.vpc.vpc_id}"_allow_22_all""
   }
 }
