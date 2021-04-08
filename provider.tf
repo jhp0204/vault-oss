@@ -4,5 +4,5 @@ provider "aws" {
 
 module "vpc" {
   source = "github.com/jhp0204/terraform-aws-simple/vpc/"
-  vpc_id = "${module.vpc.vpc_id}"
+  vpc_id = module.vpc.vpc_id
 }
