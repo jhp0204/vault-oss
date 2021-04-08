@@ -6,5 +6,6 @@ resource "aws_instance" "example" {
   tags = {
     Name = "demo-instance"
     Purpose = "Terraform Demo"
+    Trigger = "Poll SCM"
   }
 }
