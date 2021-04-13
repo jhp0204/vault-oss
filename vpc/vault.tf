@@ -11,9 +11,9 @@ variable "vault_aws_role" {
 }
 
 provider "vault" {
-  address = "http://127.0.0.1:8200"
-  token = "s.ojO2vDeAlngypg2aJZKkzI56"
-} #address, Token 포함 
+    address = "http://127.0.0.1:8200"
+    token = "s.ojO2vDeAlngypg2aJZKkzI56"
+}
 
 data "vault_generic_secret" "appkey" {
   path = "secret/appkey"
