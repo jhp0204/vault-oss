@@ -10,10 +10,7 @@ variable "vault_aws_role" {
     default = "ec2-admin"
 }
 
-provider "vault" {
-    address = "https://vault:8200"
-    token = "s.ojO2vDeAlngypg2aJZKkzI56"
-}
+
 
 data "vault_generic_secret" "appkey" {
   path = "secret/appkey"
